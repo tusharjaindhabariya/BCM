@@ -1,6 +1,6 @@
 ﻿Requirement Id,Description,State,Feature ID,Test Case ID,Package,,
 ,"MUST This word, or the terms ""REQUIRED"" or ""SHALL"", mean that the definition is an absolute requirement of the specification.",,,,,,
-,"MUST NOT This phrase, or the phrase ""SHALL NOT"", mean that the definition is an absolute prohibition of the specification. ",,,,,,
+,"MUST NOT This phrase, or the phrase ""SHALL NOThs"", mean that the definition is an absolute prohibition of the specification. ",,,,,,
 ,"SHOULD This word, or the adjective ""RECOMMENDED"", mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course. ",,,,,,
 ,"The BCM processes input signals and sends the processed data to the respective control units. It also receives data from these control units and manages the operation of various systems, including headlamps, by controlling associated functions.",,,,,,
 ,"The system shall receive input signals from the combination switch, process them, and send appropriate outputs to control the respective lamps.",,,,,,
