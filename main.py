@@ -1,11 +1,15 @@
 import pandas as pd
 import json
-
+from pathlib import Path
 # ==========================================
 # File Paths
 # ==========================================
-csv_path = r"input\requirement\Requirement_SYS2_HL.csv"
-output_path = r"output\feature_data.json"
+csv_path = Path("input") / "requirement" / "Requirement_SYS2_HL.csv"
+output_path = Path("output") / "feature_data.json"
+
+print("Current Directory:", Path.cwd())
+print("CSV Exists:", csv_path.exists())
+print("CSV Path:", csv_path)
 
 # ==========================================
 # Read CSV
