@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 from pathlib import Path
+import datetime
 # ==========================================
 # File Paths
 # ==========================================
@@ -124,6 +125,7 @@ if current_feature is not None:
 # Final JSON
 # ==========================================
 json_data = {
+    "generated_at": str(datetime.datetime.now()),
     "features": features
 }
 
