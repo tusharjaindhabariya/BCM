@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testreport starttime="2026-09-09 17:25:15" timestamp="7.369682" verdicts="5_extended" reportrunstate="TestComplete" abortmode="None" reportuniqueid="81ec4311-f5a8-4dc0-bbbc-2a4cb65cecd8" measurementid="46f9a9a8-2d20-440c-b1d8-dfe22d394216">
+  <testunit starttime="2026-09-09 17:25:15" timestamp="7.369682">
+    <testfixture>
+      <testcase starttime="2026-09-09 17:25:15" timestamp="7.369682" tcnumber="1">
+        <verdict time="2026-09-09 17:25:18" timestamp="10.435662" endtime="2026-09-09 17:25:20" endtimestamp="12.435662" result="pass" />
+        <title>HighBeam_CANFunction</title>
+        <testcaseid>6ca67341-f52e-4ec4-88de-d6ed5c912a22</testcaseid>
+        <externalref type="PREEvision" title="TEST.BCM.FUNC.HIL.HLHB.001" owner="vTESTstudio Traceability" uniqueid="a6a39e71a084cd228f4f01f" readableid="9082946684130180000">Na6a39e71a084cd228f4f020XNa6a39e71a084cd228f4f01f00</externalref>
+      </testcase>
+      <testcase starttime="2026-09-09 17:25:20" timestamp="12.435662" tcnumber="2">
+        <verdict time="2026-09-09 17:25:22" timestamp="13.515619" endtime="2026-09-09 17:25:24" endtimestamp="15.515619" result="pass" />
+        <title>LowBeam_CANFunction</title>
+        <testcaseid>9086819d-ccd0-4305-bf19-fd09e6982e8e</testcaseid>
+        <externalref type="PREEvision" title="TEST.BCM.FUNC.HIL.HLLB.001" owner="vTESTstudio Traceability" uniqueid="a6a39e71a084cd228f4f017" readableid="9082946684130140000">Na6a39e71a084cd228f4f018XNa6a39e71a084cd228f4f01700</externalref>
+      </testcase>
+      <testcase starttime="2026-09-09 17:25:24" timestamp="15.515619" tcnumber="3">
+        <verdict time="2026-09-09 17:25:29" timestamp="20.515619" endtime="2026-09-09 17:25:29" endtimestamp="20.515619" result="fail">
+          <cause>Waited for occurrence of 1 value condition.</cause>
+        </verdict>
+        <title>HeadLamp_Highbeam_Onoff</title>
+        <testcaseid>d943bc00-6710-48e9-aada-038347f1d1f6</testcaseid>
+        <externalref type="PREEvision" title="TEST.BCM.FUNC.HIL.HLHB.002" owner="vTESTstudio Traceability" uniqueid="a6a39e71a084cd228f4f031" readableid="9082946684130270000">Na6a39e71a084cd228f4f032XNa6a39e71a084cd228f4f03100</externalref>
+      </testcase>
+      <testcase starttime="2026-09-09 17:25:29" timestamp="20.515619" tcnumber="4">
+        <verdict time="2026-09-09 17:25:34" timestamp="25.515619" endtime="2026-09-09 17:25:34" endtimestamp="25.515619" result="fail">
+          <cause>Waited for occurrence of 1 value condition.</cause>
+        </verdict>
+        <title>HeadLamp_Lowbeam_Onoff</title>
+        <testcaseid>c1618918-4597-43a1-96de-82d3274e13db</testcaseid>
+        <externalref type="PREEvision" title="TEST.BCM.FUNC.HIL.HLLB.002" owner="vTESTstudio Traceability" uniqueid="a6a39e71a084cd228f4f029" readableid="9082946684130230000">Na6a39e71a084cd228f4f02aXNa6a39e71a084cd228f4f02900</externalref>
+      </testcase>
+      <title>CICD_Validation</title>
+    </testfixture>
+    <verdict time="2026-09-09 17:25:29" timestamp="20.515619" endtime="2026-09-09 17:25:34" endtimestamp="25.515619" result="fail" />
+    <title>BCM_HeadLamp</title>
+    <instancename>BCM_HeadLamp</instancename>
+    <geninfo>
+      <xinfo>
+        <name>Name</name>
+        <description>BCM_HeadLamp</description>
+      </xinfo>
+      <xinfo>
+        <name>Description</name>
+        <description />
+      </xinfo>
+      <xinfo>
+        <name>Version</name>
+        <description />
+      </xinfo>
+      <xinfo>
+        <name>File</name>
+        <description>D:\mrunal sir data\Vtest Studio\BCM_HeadLamp\BCM_HeadLamp.tue\BCM_HeadLamp.vtuexe</description>
+      </xinfo>
+      <xinfo>
+        <name>Last modification</name>
+        <description>2026-09-09, 17:23:41</description>
+      </xinfo>
+    </geninfo>
+  </testunit>
+  <verdict time="2026-09-09 17:25:29" timestamp="20.515619" endtime="2026-09-09 17:25:34" endtimestamp="25.515619" result="fail" />
+  <title>BCM_Regression Testing</title>
+  <engineer>
+    <xinfo>
+      <name>Login Name</name>
+      <description>hiladmin</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.J1939.CAN 19.5.44 (SP5) /pro</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>D:\Vector Projects\BCM_Validation\BCM_Validation\BCM_Validation.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database VECV_BCM_Rev1v1_15072025 on CAN1</name>
+      <description>D:\Vector Projects\BCM_Validation\BCM_Validation\DB\VECV_BCM_Rev1v1_15072025.dbc (2026-07-17 16:53:35)</description>
+    </xinfo>
+    <xinfo>
+      <name>Database VECV_BCM_Rev1V3_03032026 3 1 on CAN1, CAN2</name>
+      <description>C:\Users\HILAdmin\Downloads\VECV_BCM_Rev1V3_03032026 3 1.dbc (2026-08-13 10:02:19)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of VECV_BCM_CDD1v1_9022026</name>
+      <description>Base_Variant, en-US, D:\Vector Projects\BCM_Validation\BCM_Validation\DB\VECV_BCM_CDD_All_FEATURE_V1.cdd</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Configuration</name>
+      <description>BCM_Regression Testing</description>
+    </xinfo>
+    <xinfo>
+      <name>Computer Name</name>
+      <description>IT58596</description>
+    </xinfo>
+  </testsetup>
+  <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+        <xinfo key="channel">
+          <name>Channel</name>
+          <description>1</description>
+        </xinfo>
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT6104B</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>2902</description>
+        </xinfo>
+        <xinfo key="driverdllversion">
+          <name>Driver DLL version</name>
+          <description>26.10.14</description>
+        </xinfo>
+        <xinfo key="driverversion">
+          <name>Driver version</name>
+          <description>22.14.24</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="channel">
+          <name>Channel</name>
+          <description>2</description>
+        </xinfo>
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT6104B</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>2902</description>
+        </xinfo>
+        <xinfo key="driverdllversion">
+          <name>Driver DLL version</name>
+          <description>26.10.14</description>
+        </xinfo>
+        <xinfo key="driverversion">
+          <name>Driver version</name>
+          <description>22.14.24</description>
+        </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+  <hardware name="VT System" category="vtsystem">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT8012B</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>3774</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>0.0.0</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x0</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>1</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT7101</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>20486</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>1.0.2</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2003</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>2</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT2004A</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>22089</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>2.1.5</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2000</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>3</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT6104B</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>2902</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>0.0.0</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x1</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>4</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT2848</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>22340</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>1.2.12</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2011</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>5</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT2820</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>20875</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>1.0.0</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2000</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>6</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT2816A</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>22089</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>2.0.2</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2010</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>7</description>
+        </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+        <xinfo key="device">
+          <name>Device</name>
+          <description>VT2808</description>
+        </xinfo>
+        <xinfo key="serialnumber">
+          <name>Serial number</name>
+          <description>20425</description>
+        </xinfo>
+        <xinfo key="firmwareversion">
+          <name>Firmware version</name>
+          <description>1.0.0</description>
+        </xinfo>
+        <xinfo key="hardwareversion">
+          <name>Hardware version</name>
+          <description>0x2021</description>
+        </xinfo>
+        <xinfo key="ecatsubdevicenumber">
+          <name>EtherCAT-SubDevice number</name>
+          <description>8</description>
+        </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+</testreport>

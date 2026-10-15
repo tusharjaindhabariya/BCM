@@ -1,0 +1,49 @@
+{
+    "features": [
+        {
+            "feature_id": "FEAT.BCM.001",
+            "name": "Headlamp Low Beam",
+            "state": "Released",
+            "package": "Standard",
+            "supported_hw": [
+                "HW.BCM.001, HW.BCM.002"
+            ],
+            "sw_component": "SWC_BCM_Headlamp",
+            "source_path": "BCM/01_Application/Headlamp_Low_Beam",
+            "requirements": [
+                "REQ.BCM.HLLB.001",
+                "REQ.BCM.HLLB.027"
+            ],
+            "testing_status": "Execution Failed"
+        },
+        {
+            "feature_id": "FEAT.BCM.002",
+            "name": "Headlamp High Beam",
+            "state": "Released",
+            "package": "Standard",
+            "supported_hw": [
+                "HW.BCM.001, HW.BCM.002"
+            ],
+            "sw_component": "SWC_BCM_Headlamp",
+            "source_path": "BCM/01_Application/Headlamp_High_Beam",
+            "requirements": [
+                "REQ.BCM.HLHB.001",
+                "REQ.BCM.HLHB.026"
+            ],
+            "testing_status": "Execution Failed"
+        },
+        {
+            "feature_id": "FEAT.BCM.003",
+            "name": "ParkLamps",
+            "state": "In Work",
+            "package": "Aftermarket",
+            "supported_hw": [
+                "REQ.BCM.PL.001",
+                "REQ.BCM.PL.028"
+            ],
+            "sw_component": "SWC_BCM_ParkLamp",
+            "source_path": "BCM/01_Application/ParkLamps",
+            "testing_status": "Execution Failed"
+        }
+    ]
+}

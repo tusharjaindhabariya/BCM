@@ -1,0 +1,8 @@
+// this commmand check currect github account jispe repo
+git remote -v
+
+// this command change the github repo 
+git remote set-url origin {URL of github repo}
+
+// command to push code on new repo 
+git push -u origin main 

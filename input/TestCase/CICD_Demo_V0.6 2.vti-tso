@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><TraceItems version="2">
+    <Product>PREEvision</Product>
+    <Folder>
+        <UniqueID>bfa81ce91a0801b00801972e4</UniqueID>
+        <ReadableID/>
+        <VersionIdentification>2026/09/09 09:29:52,0 +0000</VersionIdentification>
+        <Name>Test Specification/Implementation</Name>
+        <Description/>
+        <Reference>Pbfa81ce91a0801b00801972e5XPbfa81ce91a0801b00801972e400</Reference>
+        <DataSource>Test Data</DataSource>
+        <Folder>
+            <UniqueID>a6a39e71a084cd228f4f011</UniqueID>
+            <ReadableID/>
+            <VersionIdentification>2026/09/09 09:29:52,0 +0000</VersionIdentification>
+            <Name>Functionality Test</Name>
+            <Description>This set of test is to test the different functionality of various BCM features.</Description>
+            <Reference>Na6a39e71a084cd228f4f012XNa6a39e71a084cd228f4f01100</Reference>
+            <DataSource>Test Data</DataSource>
+            <Folder>
+                <UniqueID>a6a39e71a084cd228f4f013</UniqueID>
+                <ReadableID/>
+                <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                <Name>HIL Test</Name>
+                <Description>This test group contains the set of test description to be done on HIL system</Description>
+                <Reference>Na6a39e71a084cd228f4f014XNa6a39e71a084cd228f4f01300</Reference>
+                <DataSource>Test Data</DataSource>
+                <Folder>
+                    <UniqueID>a6a39e71a084cd228f4f015</UniqueID>
+                    <ReadableID>9082946684130130000</ReadableID>
+                    <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                    <Name>Application CAN Signal Testing</Name>
+                    <Description>Feature should get activated on receiving appropriate activation signal and should get deactivated on receiving appropriate deactivation signal or removing activation signal</Description>
+                    <Reference>Na6a39e71a084cd228f4f016XNa6a39e71a084cd228f4f01500</Reference>
+                    <DataSource>Test Data</DataSource>
+                    <TraceItem>
+                        <UniqueID>a6a39e71a084cd228f4f017</UniqueID>
+                        <ReadableID>9082946684130140000</ReadableID>
+                        <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                        <Name>TEST.BCM.FUNC.HIL.HLLB.001</Name>
+                        <Description>Headlamp LowBeam feature should transmit feature status CAN message when BCM is in ON state.</Description>
+                        <Reference>Na6a39e71a084cd228f4f018XNa6a39e71a084cd228f4f01700</Reference>
+                        <AdditionalInformation>
+                            <Property>
+                                <Name>Init Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power ON BCM with 24V and 15A supply.
+[Actions]
+1. Connect BCM to HIL system appropriately
+2. Turn ON 24V and 15A supply voltage
+[Expected Results]
+BCM is getting 24V and 15A supply
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Run Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Headlamp LowBeam feature shall transmit feature status CAN message as 0 and 1.
+[Actions]
+1. Apply high signal (18.5V – 28.5V) on headlamp lowbeam input line (Pin No X).
+2. Wait for 3 sec.
+3. Check for CAN status message as 1 in headlamp lowbeam CAN status signal (headlamp lowbeam CAN Signal Id).
+4. Wait for 3 sec.
+5. Apply low signal (0V) on headlamp lowbeam input line (Pin No X).
+6. Wait for 3 sec.
+7. Check for CAN status message as 0 in headlamp lowbeam CAN status signal (headlamp lowbeam CAN Signal Id).
+[Expected Results]
+Headlamp LowBeam feature transmits feature status CAN message as 0 when Headlamp LowBeam feature is in OFF state and 1 when Headlamp LowBeam feature is in ON state
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Shutdown Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power OFF BCM i.e., apply 0V and 0A supply.
+[Actions]
+1. Turn OFF power supply. i.e., apply 0V and 0A supply.
+[Expected Results]
+BCM is not getting power supply
+----------------------------------------</Value>
+                            </Property>
+                        </AdditionalInformation>
+                    </TraceItem>
+                    <TraceItem>
+                        <UniqueID>a6a39e71a084cd228f4f01f</UniqueID>
+                        <ReadableID>9082946684130180000</ReadableID>
+                        <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                        <Name>TEST.BCM.FUNC.HIL.HLHB.001</Name>
+                        <Description>Headlamp HighBeam feature should transmit feature status CAN message when BCM is in ON state.</Description>
+                        <Reference>Na6a39e71a084cd228f4f020XNa6a39e71a084cd228f4f01f00</Reference>
+                        <AdditionalInformation>
+                            <Property>
+                                <Name>Init Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power ON BCM with 24V and 15A supply.
+[Actions]
+1. Connect BCM to HIL system appropriately
+2. Turn ON 24V and 15A supply voltage
+[Expected Results]
+BCM is getting 24V and 15A supply
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Run Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Headlamp HighBeam feature shall transmit feature status CAN message as 0 and 1.
+[Actions]
+1. Apply high signal (18.5V – 28.5V) on headlamp highbeam input line (Pin No X).
+2. Wait for 3 sec.
+3. Check for CAN status message as 1 in headlamp highbeam CAN status signal (headlamp highbeam CAN Signal Id).
+4. Wait for 3 sec.
+5. Apply low signal (0V) on headlamp highbeam input line (Pin No X).
+6. Wait for 3 sec.
+7. Check for CAN status message as 0 in headlamp highbeam CAN status signal (headlamp highbeam CAN Signal Id).
+[Expected Results]
+Headlamp HighBeam feature transmits feature status CAN message as 0 when Headlamp LowBeam feature is in OFF state and 1 when Headlamp HighBeam feature is in ON state
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Shutdown Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power OFF BCM i.e., apply 0V and 0A supply.
+[Actions]
+1. Turn OFF power supply. i.e., apply 0V and 0A supply.
+[Expected Results]
+BCM is not getting power supply
+----------------------------------------</Value>
+                            </Property>
+                        </AdditionalInformation>
+                    </TraceItem>
+                </Folder>
+                <Folder>
+                    <UniqueID>a6a39e71a084cd228f4f027</UniqueID>
+                    <ReadableID>9082946684130220000</ReadableID>
+                    <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                    <Name>Feature OnOff</Name>
+                    <Description>Feature should get activated on receiving appropriate activation signal and should get deactivated on receiving appropriate deactivation signal or removing activation signal</Description>
+                    <Reference>Na6a39e71a084cd228f4f028XNa6a39e71a084cd228f4f02700</Reference>
+                    <DataSource>Test Data</DataSource>
+                    <TraceItem>
+                        <UniqueID>a6a39e71a084cd228f4f029</UniqueID>
+                        <ReadableID>9082946684130230000</ReadableID>
+                        <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                        <Name>TEST.BCM.FUNC.HIL.HLLB.002</Name>
+                        <Description>Headlamp LowBeam feature should get activated on receiving 24V signal and should get deactivated on receiving 0V signal on input line.</Description>
+                        <Reference>Na6a39e71a084cd228f4f02aXNa6a39e71a084cd228f4f02900</Reference>
+                        <AdditionalInformation>
+                            <Property>
+                                <Name>Init Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power ON BCM with 24V and 15A supply.
+[Actions]
+1. Connect BCM to HIL system appropriately
+2. Turn ON 24V and 15A supply voltage
+[Expected Results]
+BCM is getting 24V and 15A supply
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Run Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Headlamp lowbeam feature should turn ON and OFF on receiving High (18.5V – 28.5V) and Low (0V) signal respectively on Headlamp lowbeam input line
+[Actions]
+1. Apply high signal (18.5V – 28.5V) on headlamp lowbeam input line (Pin No X).
+2. Wait for 3 sec.
+3. Check for output high on headlamp lowbeam output line (Pin No Y).
+4. Wait for 3 sec.
+5. Apply low signal (0V) on headlamp lowbeam input line (Pin No X).
+6. Wait for 3 sec.
+7. Check for output low on headlamp lowbeam output line (Pin No Y).
+[Expected Results]
+Headlamp lowbeam feature gets turned ON on receiving High signal (18.5V – 28.5V) and OFF on receiving Low signal (0V) on Headlamp lowbeam input line
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Shutdown Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power OFF BCM i.e., apply 0V and 0A supply.
+[Actions]
+1. Turn OFF power supply. i.e., apply 0V and 0A supply.
+[Expected Results]
+BCM is not getting power supply
+----------------------------------------</Value>
+                            </Property>
+                        </AdditionalInformation>
+                    </TraceItem>
+                    <TraceItem>
+                        <UniqueID>a6a39e71a084cd228f4f031</UniqueID>
+                        <ReadableID>9082946684130270000</ReadableID>
+                        <VersionIdentification>2026/09/09 09:28:25,0 +0000</VersionIdentification>
+                        <Name>TEST.BCM.FUNC.HIL.HLHB.002</Name>
+                        <Description>Headlamp HighBeam feature should get activated on receiving 24V signal and should get deactivated on receiving 0V signal on input line.</Description>
+                        <Reference>Na6a39e71a084cd228f4f032XNa6a39e71a084cd228f4f03100</Reference>
+                        <AdditionalInformation>
+                            <Property>
+                                <Name>Init Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power ON BCM with 24V and 15A supply.
+[Actions]
+1. Connect BCM to HIL system appropriately
+2. Turn ON 24V and 15A supply voltage
+[Expected Results]
+BCM is getting 24V and 15A supply
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Run Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Headlamp highbeam feature should turn ON and OFF on receiving High (18.5V – 28.5V) and Low (0V) signal respectively on Headlamp highbeam input line
+[Actions]
+1. Apply high signal (18.5V – 28.5V) on headlamp highbeam input line (Pin No X).
+2. Wait for 3 sec.
+3. Check for output high on headlamp highbeam output line (Pin No Y).
+4. Wait for 3 sec.
+5. Apply low signal (0V) on headlamp highbeam input line (Pin No X).
+6. Wait for 3 sec.
+7. Check for output low on headlamp highbeam output line (Pin No Y).
+[Expected Results]
+Headlamp highbeam feature gets turned ON on receiving High signal (18.5V – 28.5V) and OFF on receiving Low signal (0V) on Headlamp highbeam input line
+----------------------------------------</Value>
+                            </Property>
+                            <Property>
+                                <Name>Shutdown Steps</Name>
+                                <Value>----------------------------------------
+[Description]
+Power OFF BCM i.e., apply 0V and 0A supply.
+[Actions]
+1. Turn OFF power supply. i.e., apply 0V and 0A supply.
+[Expected Results]
+BCM is not getting power supply
+----------------------------------------</Value>
+                            </Property>
+                        </AdditionalInformation>
+                    </TraceItem>
+                </Folder>
+            </Folder>
+        </Folder>
+    </Folder>
+</TraceItems>
