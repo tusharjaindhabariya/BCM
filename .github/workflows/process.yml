@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'input/**'
+      - 'main.py'
+
+permissions:
+  contents: write
 
 jobs:
   process:
@@ -12,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -25,4 +33,17 @@ jobs:
       - name: Run Pipeline
         run: |
           python main.py
-          
+
+      - name: Commit Generated JSON
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add output/*.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto generated metadata [skip ci]"
+            git push
+          fi
