@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-22 08:51:27.581187",
+    "generated_at": "2026-10-22 09:05:17.642014",
     "features": [
         {
             "feature_id": "FEAT.BCM.001",
@@ -35,7 +35,7 @@
         },
         {
             "feature_id": "FEAT.BCM.003",
-            "name": "ParkLamps ParlLamps",
+            "name": "ParkLamps",
             "state": "In Work",
             "package": "Aftermarket",
             "supported_hw": [
@@ -43,7 +43,7 @@
                 "REQ.BCM.PL.028"
             ],
             "sw_component": "SWC_BCM_ParkLamp",
-            "source_path": "BCM/01_Application/ParkLamps_ParlLamps",
+            "source_path": "BCM/01_Application/ParkLamps",
             "testing_status": "Execution Failed"
         }
     ]
