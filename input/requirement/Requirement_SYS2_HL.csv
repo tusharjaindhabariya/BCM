@@ -22,7 +22,7 @@ REQ.BCM.HLLB.001,"If the IN_SWT_LOWBEAM signal is ON, the system shall set the O
 REQ.BCM.HLLB.002,"If the IN_SWT_LOWBEAM signal is OFF, the system shall set the OUT_LAMP_LOWBEAM signal to OFF via GPIO within 300ms.",Released,FEAT.BCM.001,,,,
 REQ.BCM.HLLB.003,The system shall log a DTC B0157-15 in case of a short to battery condition for the Low Beam front left lamp.,Released,FEAT.BCM.001,,,,
 REQ.BCM.HLLB.004,The BCM shall go to the OFF state when a CAN message with the IGN_15 signal value set to 0 (Ignition Off) is detected.,Released,FEAT.BCM.001,,,,
-REQ.BCM.HLLB.005,"The system shall ensure that the Low Beam headlamps remain functional when the BCM is in the ON state, which occurs when a CAN message with the IGN_15 signal value set to 1 (Accessory ON), 2 (Ignition ON) is detected.",Released,FEAT.BCM.001,,,,
+REQ.BCM.HLLB.005,"The system will ensure that the Low Beam headlamps remain functional when the BCM is in the ON state, which occurs when a CAN message with the IGN_15 signal value set to 1 (Accessory ON), 2 (Ignition ON) is detected.",Released,FEAT.BCM.001,,,,
 REQ.BCM.HLLB.006,"The system shall ensure that the Low Beam headlamps are disabled when the BCM is in the OFF state, which occurs when a CAN message with the IGN_15 signal value set to 0 (Ignition Off) is detected.",Released,FEAT.BCM.001,,,,
 REQ.BCM.HLLB.007,The system shall monitor IN_SWT_LOWBEAM signal on GPIO when in on state,Released,FEAT.BCM.001,,,,
 REQ.BCM.HLLB.008,"If the IN_SWT_LOWBEAM signal is ON, the system shall set the OUT_LAMP_LOWBEAM signal to ON via GPIO (Relay Operation).",Released,FEAT.BCM.001,TEST.BCM.FUNC.HIL.HLLB.002,,,
