@@ -72,7 +72,7 @@ REQ.BCM.HLHB.023,The H4 bulb shall operate at a rated voltage of 24 V,Released,F
 REQ.BCM.HLHB.024,The H4 bulb shall operate at a rated power of 75 watts.,Released,FEAT.BCM.002,,,,
 REQ.BCM.HLHB.025,The H4 bulb shall have a maximum operating voltage of 28 V,Released,FEAT.BCM.002,,,,
 REQ.BCM.HLHB.026,The H4 bulb shall have a maximum operating current of 85 watts,Released,FEAT.BCM.002,,,,
-REQ.BCM.PL.000,ParkLamps,In Work,FEAT.BCM.003,,Aftermarket,,
+REQ.BCM.PL.000,ParkLamps ParlLamps,In Work,FEAT.BCM.003,,Aftermarket,,
 REQ.BCM.PL.001,"If the IN_SWT_PARKLAMP signal is ON, the system shall set the OUT_LAMP_PARK signal to ON via GPIO (Relay Operation).",In Work,FEAT.BCM.003,,,,
 REQ.BCM.PL.002,"If the IN_SWT_PARKLAMP signal is OFF, the system shall set the OUT_LAMP_PARK signal to OFF via GPIO (Relay Operation). ",In Work,FEAT.BCM.003,,,,
 REQ.BCM.PL.003,"If the IN_SWT_PARKLAMP signal is ON, the system shall set the OUT_LAMP_PARK signal to ON via GPIO within 300ms.",In Work,FEAT.BCM.003,,,,
