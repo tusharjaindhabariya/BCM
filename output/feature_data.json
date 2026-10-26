@@ -1,5 +1,4 @@
 {
-    "generated_at": "2026-10-22 09:08:17.387647",
     "features": [
         {
             "feature_id": "FEAT.BCM.001",
@@ -7,10 +6,12 @@
             "state": "Released",
             "package": "Standard",
             "supported_hw": [
-                "HW.BCM.001, HW.BCM.002"
+                "HW.BCM.001",
+                "HW.BCM.002"
             ],
             "sw_component": "SWC_BCM_Headlamp",
             "source_path": "BCM/01_Application/Headlamp_Low_Beam",
+            "source_file": "Requirement_SYS2_HL.csv",
             "requirements": [
                 "REQ.BCM.HLLB.001",
                 "REQ.BCM.HLLB.027"
@@ -23,10 +24,12 @@
             "state": "Released",
             "package": "Standard",
             "supported_hw": [
-                "HW.BCM.001, HW.BCM.002"
+                "HW.BCM.001",
+                "HW.BCM.002"
             ],
             "sw_component": "SWC_BCM_Headlamp",
             "source_path": "BCM/01_Application/Headlamp_High_Beam",
+            "source_file": "Requirement_SYS2_HL.csv",
             "requirements": [
                 "REQ.BCM.HLHB.001",
                 "REQ.BCM.HLHB.026"
@@ -39,11 +42,16 @@
             "state": "In Work",
             "package": "Aftermarket",
             "supported_hw": [
-                "REQ.BCM.PL.001",
-                "REQ.BCM.PL.028"
+                "HW.BCM.001",
+                "HW.BCM.002"
             ],
             "sw_component": "SWC_BCM_ParkLamp",
             "source_path": "BCM/01_Application/ParkLamps",
+            "source_file": "Requirement_SYS2_HL.csv",
+            "requirements": [
+                "REQ.BCM.PL.001",
+                "REQ.BCM.PL.028"
+            ],
             "testing_status": "Execution Failed"
         }
     ]
